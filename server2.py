@@ -5,12 +5,7 @@ from typing import Dict
 # Initialize FastAPI app and MongoDB client
 app = FastAPI()
 
-# mongo_client = MongoClient("mongodb+srv://amanK:RghGhr%40123@clusternotes.jwcg8.mongodb.net/")
-# db = mongo_client["shared_notes"]
-# documents_collection = db["notes"]
-
-
-client = MongoClient("mongodb+srv://amanK:RghGhr%40123@clusternotes.jwcg8.mongodb.net/")
+client = MongoClient("mongodb://localhost:27017/") # Connect to MongoDB (replace with connection string)
 db = client["shared_notes"]
 documents_collection = db["notes"]
 
